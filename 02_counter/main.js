@@ -1,4 +1,3 @@
-const counter = document.querySelector('h1');
 const button = document.querySelector('button');
 const resultH1 = document.getElementById('resultH1');
 // const plusButton = document.getElementsByClassName('plusButton')[0];
@@ -19,17 +18,17 @@ let count = 0;
 
 resultH1.innerHTML = count;
 
-function plus() {
-    count++;
+function plus(number=1) {
+    count+=number;
     resultH1.innerHTML = count;
 }
 
-function plus2() {
-    count += 2;
-    resultH1.innerHTML = count;
-}
+// function plus2() {
+//     count += 2;
+//     resultH1.innerHTML = count;
+// }
 
-function minus() {
-    count--;
-    resultH1.innerHTML = count;
-}
+// function minus() {
+//     count--;
+//     resultH1.innerHTML = count;
+// }
