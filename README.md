@@ -5,3 +5,5 @@ vanilla HTMl, JavaScript
 ```shell
 npm create vite@latest .
 ```
+
+### CounterApp 🥱
