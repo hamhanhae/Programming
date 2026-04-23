@@ -16,7 +16,7 @@ export default function TodoAdder({addTodo}) {
                 type="text" placeholder="할 일을 입력하세요" className="todo__input"
                 value={inputTodo} onChange={(event) => setInputTodo(event.target.value)}
                 />
-                <Button type="submit" className="todo__button todo_t_button--add">Add</Button>
+                <Button type="submit" className="todo__button todo__button--add">Add</Button>
             </form>
         </>
     )
