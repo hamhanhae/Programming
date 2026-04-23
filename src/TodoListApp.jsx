@@ -31,13 +31,20 @@ function TodoListApp() {
         )
     }
 
+    function deleteTodo(id) {
+        setTodos((todos) =>
+            // todos에서 하나씩 꺼내어 todo의 id가 id와 같지 않은 것들을 남김
+            todos.filter((todo) => todo.id !== id)
+        )
+    }
+
     return (
         <div className="todo">
             <TodoHeader />
             <TodoAdder addTodo={addTodo} />
-            <TodoList todos={todos} toggleTodo={toggleTodo} />
+            <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
         </div>
-    ); // 이 부분의 괄호 짝이 맞는지 확인하세요!
+    );
 }
 
 export default TodoListApp;

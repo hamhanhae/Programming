@@ -1,7 +1,7 @@
 import Checkbox from './Checkbox.jsx'
 import Button from './Button.jsx'
 
-export default function TodoItem({ todo, toggleTodo }) {
+export default function TodoItem({ todo, toggleTodo, deleteTodo }) {
     return (
         // todo.isCompleted가 참이면 "todo__item--complete" 아니면 ""
         <li className={`todo__item${todo.isCompleted ? " todo__item--complete" : ""}`}>
@@ -10,7 +10,9 @@ export default function TodoItem({ todo, toggleTodo }) {
                 onChange={() => toggleTodo(todo.id)}
             >{todo.text}</Checkbox>
             <Button type="button" className="todo__button todo__button--edit">✏️</Button>
-            <Button type="button" className="todo__button todo__button--delete">❌</Button>
+            <Button type="button" className="todo__button todo__button--delete" onClick={() => deleteTodo(todo.id)}>
+                ❌
+            </Button>
         </li>
     )
 }
