@@ -28,3 +28,5 @@ npm create vite@latest .
 - `{조건식 && 참}`, `{!조건식 && 거짓}`
 - onKeyDown
 - LocalStorage, `useEffect(명령어, [변할값])`
+- `style={{}}`
+- HomeApp: state를 이용해서 다른 컴포넌트 표시하자
